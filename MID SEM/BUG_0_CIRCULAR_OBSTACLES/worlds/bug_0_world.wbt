@@ -1,0 +1,85 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/plants/protos/FlowerPot.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.6950707829406974 -0.0035911018642881716 0.7189323408288198 3.149025454044221
+  position 0.20633665568346932 0.05978846102649263 6.2466786999891
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 3 3
+}
+Solid {
+  translation 0.88 -0.11 0.22
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+      }
+      geometry Sphere {
+        radius 0.2
+      }
+    }
+  ]
+}
+Solid {
+  translation 0.34 -0.11 0.21
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+      }
+      geometry Sphere {
+        radius 0.2
+      }
+    }
+  ]
+  name "solid(1)"
+}
+Solid {
+  translation -0.44 -0.1 0.2
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+      }
+      geometry Sphere {
+        radius 0.2
+      }
+    }
+  ]
+  name "solid(2)"
+}
+Solid {
+  translation 0.17 1.26 0.2
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+      }
+      geometry Sphere {
+        radius 0.2
+      }
+    }
+  ]
+  name "solid(4)"
+}
+FlowerPot {
+  translation -0.12 -0.11 0
+}
+DEF e_puck E-puck {
+  translation 1.24 -0.130096 0
+  rotation 0 0 1 3.1408
+  controller "bug_0_cont"
+  supervisor TRUE
+}
