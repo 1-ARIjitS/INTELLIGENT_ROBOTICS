@@ -101,7 +101,7 @@ def run_robot(robot):
     print("Hello")
 
     goal_pos= [-0.6, -0.57, 0.0]
-    source_pos= [1.31, -0.11, 0.0]
+    source_pos= [1.31, -0.53, 0.0]
 
     epuck_node= robot.getFromDef('pursuer_1')
     epuck_trans_field= epuck_node.getField('translation')
