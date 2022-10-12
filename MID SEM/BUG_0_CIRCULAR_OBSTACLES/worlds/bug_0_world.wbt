@@ -9,8 +9,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/project
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.6950707829406974 -0.0035911018642881716 0.7189323408288198 3.149025454044221
-  position 0.20633665568346932 0.05978846102649263 6.2466786999891
+  orientation -0.47097794942266274 0.0013939597923018426 0.8821438817073557 3.1363768829142233
+  position 2.815854681994242 0.008992336684379019 3.8050187790045893
 }
 TexturedBackground {
 }
@@ -47,7 +47,7 @@ Solid {
   name "solid(1)"
 }
 Solid {
-  translation -0.44 -0.1 0.2
+  translation -0.62 -0.1 0.2
   children [
     Shape {
       appearance PBRAppearance {
@@ -61,7 +61,7 @@ Solid {
   name "solid(2)"
 }
 Solid {
-  translation 0.17 1.26 0.2
+  translation 0.08 0.47 0.2
   children [
     Shape {
       appearance PBRAppearance {
@@ -73,6 +73,20 @@ Solid {
     }
   ]
   name "solid(4)"
+}
+Solid {
+  translation 0.08 -0.72 0.2
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+      }
+      geometry Sphere {
+        radius 0.2
+      }
+    }
+  ]
+  name "solid(3)"
 }
 FlowerPot {
   translation -0.12 -0.11 0
