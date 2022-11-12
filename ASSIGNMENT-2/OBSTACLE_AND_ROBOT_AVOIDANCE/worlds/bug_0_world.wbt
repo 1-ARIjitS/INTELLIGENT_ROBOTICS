@@ -1,0 +1,99 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/plants/protos/FlowerPot.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.6647952039271033 0.011108861054909491 0.7469430567597396 3.116635066928887
+  position 0.6904740112619396 0.10620143009288624 5.5994536469659835
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 3 5
+}
+DEF e_puck_sec2 E-puck {
+  translation 0.694721 1.62638 0
+  rotation 0 0 1 -2.36
+  name "e-puck(2)"
+  controller "carrot_chasing_controller_2"
+  supervisor TRUE
+}
+DEF e_puck_sec1 E-puck {
+  translation 0.813862 0.233638 0
+  rotation 0 0 1 -2.3561953071795863
+  name "e-puck(1)"
+  controller "carrot_chasing_controller"
+  supervisor TRUE
+}
+Solid {
+  translation 0.74 -0.56 0.21
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+      }
+      geometry Sphere {
+        radius 0.2
+      }
+    }
+  ]
+}
+Solid {
+  translation -0.56 -0.43 0.2
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+      }
+      geometry Sphere {
+        radius 0.2
+      }
+    }
+  ]
+  name "solid(1)"
+}
+Solid {
+  translation -0.64 0.75 0.2
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+      }
+      geometry Sphere {
+        radius 0.2
+      }
+    }
+  ]
+  name "solid(2)"
+}
+Solid {
+  translation 0.46 0.67 0.2
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 1 0 0
+      }
+      geometry Sphere {
+        radius 0.2
+      }
+    }
+  ]
+  name "solid(4)"
+}
+FlowerPot {
+  translation -0.92 1.1 0
+}
+DEF e_puck E-puck {
+  translation 1.04915 -0.884259 0
+  rotation 0 0 -1 -2.3554053071795864
+  controller "bug_0_cont"
+  supervisor TRUE
+}
