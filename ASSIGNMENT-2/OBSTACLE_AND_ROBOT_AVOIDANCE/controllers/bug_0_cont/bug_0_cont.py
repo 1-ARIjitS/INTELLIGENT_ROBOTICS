@@ -178,7 +178,7 @@ def run_robot(robot):
                 print("turn right towards goal")
                 epuck_rot_field.setSFRotation([rot[0], rot[1], rot[2], target_angle])
             
-            elif(dist_source_sec1<0.5):
+            elif(dist_source_sec1<0.5 or dist_source_sec2<0.5):
                 left_speed = 0.3*max_speed
                 right_speed = 0.3*max_speed
                 # itr+=1
