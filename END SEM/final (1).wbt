@@ -1,0 +1,51 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/irobot/create/protos/Create.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/devices/robotis/protos/RobotisLds01.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/robots/robotis/turtlebot/protos/TurtleBot3Burger.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/apartment_structure/protos/Wall.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.49612334528547636 0.5150863336937572 0.6989618695641927 1.8860936768938061
+  position 1.2792464125492133 -2.834187562251725 6.919487118638916
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  rotation 0 1 0 4.692820414042842e-06
+  floorSize 3 3
+}
+DEF create0 Create {
+  translation -0.584428 -0.4165 0.0525909
+  rotation -0.00038670787970095967 0.004297968662966201 0.9999906889178459 -2.941165307179586
+  name "Create0"
+  supervisor TRUE
+}
+DEF create1 Create {
+  translation 0.801064 -0.0275216 0.0438768
+  rotation -0.0672337135926083 -0.015412703115978952 0.9976182016880034 0.0344587
+  name "Create1"
+  supervisor TRUE
+}
+Wall {
+  translation -0.0139521 -0.192863 -8.88178e-15
+  size 0.05 2.6 0.23
+}
+DEF turt_bot TurtleBot3Burger {
+  translation -0.7178035449758323 -1.1181902947258935 -0.00023794969367854635
+  rotation 0.0024837999966443253 -0.002548229697167785 0.9999936686114503 1.5708030405068005
+  controller "turtle_bot_controller"
+  supervisor TRUE
+  extensionSlot [
+    RobotisLds01 {
+      rotation 0 0 1 1.5707996938995745
+    }
+  ]
+}
